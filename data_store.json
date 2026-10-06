@@ -1,0 +1,226 @@
+{
+  "users": [
+    {
+      "_id": "user_zket5y2",
+      "createdAt": "2026-08-29T08:38:01.704Z",
+      "name": "Test Food Hub",
+      "email": "testfood@ecolink.com",
+      "password": "$2a$10$ZxknbNN3d4nRpNi20b/nkuqoTxkYYtLhSornG4k.sdWCmzDQk2XKq",
+      "role": "food_business",
+      "photo": "",
+      "contact": {
+        "phone": "9876543210",
+        "altPhone": "",
+        "address": "Mumbai"
+      },
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          72.8777,
+          19.076
+        ]
+      }
+    },
+    {
+      "_id": "user_seller_01",
+      "name": "Green Earth Organics",
+      "email": "seller@ecolink.com",
+      "password": "$2a$10$FBY6boq5J54NIjNmHtyv7.hmsa0aGSEhLYIzN/gk2FbNJmoMxR44K",
+      "role": "food_business",
+      "photo": "",
+      "contact": {
+        "phone": "9876543210",
+        "altPhone": "",
+        "address": "Bandra West, Mumbai"
+      },
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          72.836,
+          19.0596
+        ]
+      },
+      "createdAt": "2026-08-29T08:39:08.998Z"
+    },
+    {
+      "_id": "user_recycler_01",
+      "name": "BioPower Energy Solutions",
+      "email": "recycler@ecolink.com",
+      "password": "$2a$10$FBY6boq5J54NIjNmHtyv7.hmsa0aGSEhLYIzN/gk2FbNJmoMxR44K",
+      "role": "biomass_company",
+      "photo": "",
+      "contact": {
+        "phone": "9876543211",
+        "altPhone": "",
+        "address": "Andheri East, Mumbai"
+      },
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          72.8697,
+          19.1136
+        ]
+      },
+      "createdAt": "2026-08-29T08:39:08.998Z"
+    },
+    {
+      "_id": "user_3et9dcs",
+      "createdAt": "2026-08-29T08:39:17.266Z",
+      "name": "Fresh Organic Bistro",
+      "email": "bistro@ecolink.com",
+      "password": "$2a$10$EPEeQ3LbKpaFqSCEf/HO6eNiLWwVx55c5.aC2ZmqVIO5bicbPYBc2",
+      "role": "food_business",
+      "photo": "",
+      "contact": {
+        "phone": "9876543299",
+        "altPhone": "",
+        "address": "Colaba, Mumbai"
+      },
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          72.8777,
+          19.076
+        ]
+      }
+    },
+    {
+      "_id": "user_ftx0dgb",
+      "createdAt": "2026-08-29T08:41:34.363Z",
+      "name": "priya",
+      "email": "priya12234@gmail.com",
+      "password": "$2a$10$GkC/W4hkCdReGxli9cnSeeKhlEGOnqmDy0FBcrbNpLGaQAciygKnW",
+      "role": "food_business",
+      "photo": "",
+      "contact": {
+        "phone": "1234567891",
+        "altPhone": "",
+        "address": ""
+      },
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          72.8777,
+          19.076
+        ]
+      }
+    },
+    {
+      "_id": "user_4z6uk8s",
+      "createdAt": "2026-08-29T08:58:03.813Z",
+      "name": "priyanka",
+      "email": "priya11234@gmail.com",
+      "password": "$2a$10$.d0ZMOW3Xutap4JMrVe.FuZ3DiMlmpkZre7WpkkZm35JPJd.SUYGm",
+      "role": "biomass_company",
+      "photo": "",
+      "contact": {
+        "phone": "1234567891",
+        "altPhone": "",
+        "address": ""
+      },
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          72.8777,
+          19.076
+        ]
+      }
+    }
+  ],
+  "listings": [
+    {
+      "_id": "list_btqukll",
+      "createdAt": "2026-08-29T08:42:25.030Z",
+      "producer": "user_ftx0dgb",
+      "category": "raw_organic",
+      "weight": 245,
+      "description": "Standard organic waste batch [Pricing: Free]",
+      "expiryHours": 24,
+      "status": "requested",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          72.8777,
+          19.076
+        ]
+      }
+    },
+    {
+      "_id": "list_nduu0x2",
+      "createdAt": "2026-08-29T08:56:47.012Z",
+      "producer": "user_ftx0dgb",
+      "category": "raw_organic",
+      "weight": 24554,
+      "description": "Standard organic waste batch [Pricing: Free]",
+      "expiryHours": 24,
+      "status": "requested",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          72.8777,
+          19.076
+        ]
+      }
+    }
+  ],
+  "requests": [
+    {
+      "_id": "req_e4sr40u",
+      "createdAt": "2026-08-29T08:58:26.800Z",
+      "listing": "list_nduu0x2",
+      "consumer": "user_4z6uk8s",
+      "producer": "user_ftx0dgb",
+      "scheduledTime": "2026-08-29T10:58:26.794Z",
+      "status": "pending",
+      "notes": ""
+    },
+    {
+      "_id": "req_biza2oo",
+      "createdAt": "2026-08-29T08:58:39.337Z",
+      "listing": "list_btqukll",
+      "consumer": "user_4z6uk8s",
+      "producer": "user_ftx0dgb",
+      "scheduledTime": "2026-08-29T10:58:39.334Z",
+      "status": "pending",
+      "notes": ""
+    }
+  ],
+  "notifications": [
+    {
+      "_id": "notif_h9r53xe",
+      "createdAt": "2026-08-29T08:42:25.032Z",
+      "read": false,
+      "recipient": "user_recycler_01",
+      "title": "🌱 New Resource Available!",
+      "message": "priya logged 245 kg of raw organic.",
+      "type": "system"
+    },
+    {
+      "_id": "notif_nudzpxp",
+      "createdAt": "2026-08-29T08:56:47.014Z",
+      "read": false,
+      "recipient": "user_recycler_01",
+      "title": "🌱 New Resource Available!",
+      "message": "priya logged 24554 kg of raw organic.",
+      "type": "system"
+    },
+    {
+      "_id": "notif_cw62pl6",
+      "createdAt": "2026-08-29T08:58:26.803Z",
+      "read": true,
+      "recipient": "user_ftx0dgb",
+      "title": "🚚 Pickup Requested!",
+      "message": "priyanka requested a pickup for 24554 kg of raw organic.",
+      "type": "pickup_request"
+    },
+    {
+      "_id": "notif_mdo5dzp",
+      "createdAt": "2026-08-29T08:58:39.340Z",
+      "read": true,
+      "recipient": "user_ftx0dgb",
+      "title": "🚚 Pickup Requested!",
+      "message": "priyanka requested a pickup for 245 kg of raw organic.",
+      "type": "pickup_request"
+    }
+  ]
+}

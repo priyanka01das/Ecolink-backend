@@ -1,0 +1,17 @@
+{
+  "watch": [
+    "server.js",
+    "config",
+    "controllers",
+    "middleware",
+    "models",
+    "routes",
+    "services"
+  ],
+  "ext": "js,mjs,cjs",
+  "ignore": [
+    "data_store.json",
+    "*.log",
+    "node_modules"
+  ]
+}
