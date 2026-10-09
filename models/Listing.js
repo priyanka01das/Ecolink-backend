@@ -9,7 +9,6 @@ const listingSchema = new mongoose.Schema(
     },
     category: {
       type: String,
-      enum: ['raw_organic', 'cooked_food', 'bakery', 'oil_grease', 'green_waste'],
       required: [true, 'Category is required']
     },
     weight: {

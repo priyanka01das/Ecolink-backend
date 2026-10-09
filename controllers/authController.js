@@ -4,7 +4,8 @@ import { dbService } from '../services/dbService.js';
 
 const generateToken = (id, role) => {
   const JWT_SECRET = process.env.JWT_SECRET || 'ecolink-production-jwt-secret-key-2026';
-  return jwt.sign({ id: id.toString(), role }, JWT_SECRET, { expiresIn: '7d' });
+  const expiresIn = process.env.JWT_EXPIRES_IN || '7d';
+  return jwt.sign({ id: id.toString(), role }, JWT_SECRET, { expiresIn });
 };
 
 // @desc    Register a new user
@@ -231,10 +232,15 @@ export const forgotPassword = async (req, res) => {
 
     console.log(`🔑 Password Reset Code for [${cleanEmail}]: ${demoCode}`);
 
-    res.json({
-      message: 'Password reset code generated successfully.',
-      demoCode
-    });
+    const responsePayload = {
+      message: 'Password reset code generated successfully.'
+    };
+
+    if (process.env.NODE_ENV !== 'production') {
+      responsePayload.demoCode = demoCode;
+    }
+
+    res.json(responsePayload);
   } catch (error) {
     console.error('Forgot password error:', error);
     res.status(500).json({ message: 'Server error generating password reset code' });

@@ -242,7 +242,11 @@ export const dbService = {
           };
         }
         
-        const listings = await Listing.find(query).populate('producer', 'name email contact photo location').sort({ createdAt: -1 });
+        let cursor = Listing.find(query).populate('producer', 'name email contact photo location');
+        if (!filters.lat || !filters.lng) {
+          cursor = cursor.sort({ createdAt: -1 });
+        }
+        const listings = await cursor;
         return listings.map(l => l.toObject());
       } else {
         let results = [...mockData.listings];

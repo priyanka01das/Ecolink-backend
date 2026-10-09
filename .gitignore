@@ -9,6 +9,7 @@ package-lock.json.bak
 .env.production
 .env.test
 *.env
+!.env.example
 
 # Logs & debugging
 logs/
